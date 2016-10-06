@@ -2,6 +2,7 @@ package com.theironyard;
 
 import javax.persistence.*;
 
+//field names should be determined by the front end names them
 @Entity
 @Table(name = "users")
 public class User {
@@ -13,7 +14,8 @@ public class User {
     String username;
 
     @Column(nullable = false)
-    String address;
+    String passord;
+
 
     @Column(nullable = false)
     String email;
@@ -34,12 +36,12 @@ public class User {
         this.username = username;
     }
 
-    public String getAddress() {
-        return this.address;
+    public String getPassord() {
+        return this.passord;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setPassord(String passord) {
+        this.passord = passord;
     }
 
     public String getEmail() {
